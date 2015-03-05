@@ -3,7 +3,7 @@ MAINTAINER Francois Gaudin <francois@presencelearning.com>
 
 RUN \
   apt-get update && apt-get install -y build-essential python-dev python-pip \
-  && pip install gunicorn
+  && pip install gunicorn && touch /etc/gunicorn.py
 
 COPY supervisord.conf /etc/supervisor/conf.d/gunicorn.conf
 
