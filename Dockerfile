@@ -1,4 +1,4 @@
-FROM ablerman/base
+FROM fgaudin/base:3
 MAINTAINER Francois Gaudin <francois@presencelearning.com>
 
 RUN \
