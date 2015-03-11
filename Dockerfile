@@ -6,6 +6,7 @@ RUN \
   && pip install gunicorn && touch /etc/gunicorn.py
 
 COPY supervisord.conf /etc/supervisor/conf.d/gunicorn.conf
+COPY logstash-forwarder.conf /etc/logstash-forwarder/gunicorn.conf
 
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
